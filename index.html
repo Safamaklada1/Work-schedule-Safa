@@ -1,0 +1,50 @@
+<html ng-app="app">
+	<head>
+		<!-- <meta charset="utf-8"> -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+	</head>
+	<body>
+		<ul>
+			<li>
+				<a href="#/createWorkers" class="btn btn-primary">create workers</a>
+			</li>
+			<li>
+				<a href="#">home</a>
+			</li>
+			<li>
+				<a href="#/message" class="btn btn-primary">message</a>
+			</li>
+			<li>
+				<a href="#/getMessagesToList" class="btn btn-primary">manager messages</a>
+			</li>
+		</ul>
+		<ng-view></ng-view>
+
+		
+
+			
+
+			
+
+		
+
+		<!-- style -->
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<!-- <script src="node_modules/bootstrap/dist/css/bootstrap.css"></script> -->
+		<!-- angular -->
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="node_modules/angular-route/angular-route.js"></script>
+		<!-- config -->
+		<script src="app/config.js"></script>
+		<script src="app/route.js"></script>
+		<!-- controllers -->
+		<script src="app/controllers/createWorkers.js"></script>
+		<script src="app/controllers/message.js"></script>
+		<script src="app/controllers/getMessagesToList.js"></script>
+		<!-- services -->
+
+		<!-- directives -->
+
+	</body>
+</html>

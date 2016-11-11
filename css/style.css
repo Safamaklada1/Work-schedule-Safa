@@ -1,0 +1,10 @@
+.box1{
+	direction: rtl;
+	float:left;
+}
+ul{
+	list-style-type: none;
+}
+ul li{
+	list-style-type: none;
+}

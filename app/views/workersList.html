@@ -1,0 +1,48 @@
+
+			<div >
+			<input type="number" placeholder="משמרת" ng-model="shift"/>
+			<input type="text" placeholder="שם" ng-model="name"/>
+			<div class="box1">
+			<input type="checkbox" ng-model="jobTitle.value1"  ng-true-value="'v'" ng-false-value="'x'"/>
+			מנהל משמרת
+			<input type="checkbox"  ng-model="jobTitle.value2"  ng-true-value="'v'" ng-false-value="'x'"/>
+			בקרה
+			<input type="checkbox"  ng-model="jobTitle.value3"  ng-true-value="'v'" ng-false-value="'x'"/>
+			מפעיל K
+			<input type="checkbox"  ng-model="jobTitle.value4"  ng-true-value="'v'" ng-false-value="'x'"/>
+			מעבדה
+			<input type="checkbox"  ng-model="jobTitle.value5"  ng-true-value="'v'" ng-false-value="'x'"/>
+			טכני
+			<input type="checkbox"  ng-model="jobTitle.value6"  ng-true-value="'v'" ng-false-value="'x'"/>
+			פרילינג
+			</div>
+			<button class="btn" ng-click="worker()">
+				createWorker
+			</button>
+			<div><button ng-click="getList()">getList</button>
+				<table class="table">
+					<thead>
+						<th>shift</th><th>name</th><th>מנהל משמרת</th><th>בקרה</th><th>מפעיל K</th><th>מעבדה</th><th>טכני</th><th>פרילינג</th>
+					</thead>
+					<tbody>
+						<tr ng-repeat="a in getWorker">
+							
+							<td>{{a.shift}}</td>
+							<td>{{a.name}}</td>
+							<td>{{a.a}}</td>
+							<td>{{a.b}}</td>
+							<td>{{a.c}}</td>
+							<td>{{a.d}}</td>
+							<td>{{a.e}}</td>
+							<td>{{a.f}}</td>
+							
+						</tr>
+						
+						
+						
+					</tbody>
+					
+				</table>
+			</div>
+		</div>
+	
