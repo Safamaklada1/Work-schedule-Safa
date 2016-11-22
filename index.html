@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<ul>
-
+			<!-- <div  ng-init="viewDate()">date:</div> -->
 			<li>
 				<a href="#">home</a>
 			</li>
@@ -21,6 +21,27 @@
 				<a href="#/getMessagesToList" class="btn btn-primary">manager messages</a>
 			</li>
 		</ul>
+		<div class="clear-box"></div>
+		<table ng-controller="getShifts" class="table">
+			
+			
+				<tr ng-init="getShift()">
+
+					<td>{{date}}</td>
+					<tr>
+						<td>בוקר</td>
+					<td ng-repeat="s in getShift1"> {{s}} </td></tr>
+					<tr>
+						<td>צהריים</td>
+						
+					<td ng-repeat="s in getShift2"> {{s}} </td></tr>
+					<tr>
+						<td>לילה</td>
+					<td ng-repeat="s in getShift3"> {{s}} </td>
+</tr>
+				</tr>
+			
+		</table>
 		<ng-view></ng-view>
 
 		<!-- style -->
@@ -29,6 +50,7 @@
 		<!-- angular -->
 		<script src="node_modules/angular/angular.js"></script>
 		<script src="node_modules/angular-route/angular-route.js"></script>
+		<script src="node_modules/moment/moment.js"></script>
 		<!-- config -->
 		<script src="app/config.js"></script>
 		<script src="app/route.js"></script>
@@ -36,8 +58,9 @@
 		<script src="app/controllers/createWorkers.js"></script>
 		<script src="app/controllers/message.js"></script>
 		<script src="app/controllers/getMessagesToList.js"></script>
+		<script src="app/controllers/getShifts.js"></script>
 		<!-- services -->
-
+		<script src="app/services/dateTime.js"></script>
 		<!-- directives -->
 
 	</body>
