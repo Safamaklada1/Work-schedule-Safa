@@ -1,7 +1,12 @@
-
-			<div >
-			<input type="number" placeholder="משמרת" ng-model="shift"/>
-			<input type="text" placeholder="שם" ng-model="name"/>
+<div class="clear-box"></div>
+			<div>date:{{date}}</div>
+			<div ng-init="getList()" ng-init="getShift()" ><hr>
+			<input type="number" placeholder="משמרת" ng-model="shift"  />
+			<input type="text" placeholder="שם" ng-model="name"  /><br>
+			<input type="text" placeholder="כתובת" ng-model="address"  />
+			<input type="number" placeholder="טלפון" ng-model="phone"  /><br>
+			<input type="email" placeholder="example@example.com" ng-model="email"  />
+			<hr>
 			<div class="box1">
 			<input type="checkbox" ng-model="jobTitle.value1"  ng-true-value="'v'" ng-false-value="'x'"/>
 			מנהל משמרת
@@ -15,29 +20,33 @@
 			טכני
 			<input type="checkbox"  ng-model="jobTitle.value6"  ng-true-value="'v'" ng-false-value="'x'"/>
 			פרילינג
-			</div>
-			<button class="btn" ng-click="worker()">
+			</div><br><hr>
+			<button type="submit" class="btn" ng-click="worker()">
 				createWorker
 			</button>
-			<div><button ng-click="getList()">getList</button>
+			<div><!-- <button ng-click="getList()">getList</button> -->
 				<table class="table">
 					<thead>
-						<th>shift</th><th>name</th><th>מנהל משמרת</th><th>בקרה</th><th>מפעיל K</th><th>מעבדה</th><th>טכני</th><th>פרילינג</th>
+						<th>No.</th><th></th><th>shift</th><th>name</th><th>email</th><th>phone</th><th>מנהל משמרת</th><th>בקרה</th><th>מפעיל K</th><th>מעבדה</th><th>טכני</th><th>פרילינג</th>
 					</thead>
 					<tbody>
-						<tr ng-repeat="a in getWorker">
-							
+						<tr ng-repeat="a in getWorker track by $index">
+							<td>{{$index+1}}</td>
+							<td><button class="btn-danger" ng-click="deleteWorker($index)">delete</button></td>
 							<td>{{a.shift}}</td>
 							<td>{{a.name}}</td>
-							<td>{{a.a}}</td>
-							<td>{{a.b}}</td>
-							<td>{{a.c}}</td>
-							<td>{{a.d}}</td>
-							<td>{{a.e}}</td>
-							<td>{{a.f}}</td>
+							<td>{{a.email}}</td>
+							<td>{{a.phone}}</td>
+							<td>{{a.shiftManager}}</td>
+							<td>{{a.control}}</td>
+							<td>{{a.kOperator}}</td>
+							<td>{{a.lab}}</td>
+							<td>{{a.k200}}</td>
+							<td>{{a.pr}}</td>
 							
 						</tr>
 						
+						<br><br>
 						
 						
 					</tbody>
