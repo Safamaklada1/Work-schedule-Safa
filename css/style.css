@@ -13,6 +13,10 @@ ul li{
 	float:left;
 	list-style-type: none;
 }
+#date{
+	text-align: center;
+    
+}
 .clear-box{
 	clear:both;
 	overflow: hidden;

@@ -21,27 +21,7 @@
 				<a href="#/getMessagesToList" class="btn btn-primary">manager messages</a>
 			</li>
 		</ul>
-		<div class="clear-box"></div>
-		<table ng-controller="getShifts" class="table">
-			
-			
-				<tr ng-init="getShift()">
-
-					<td>{{date}}</td>
-					<tr>
-						<td>בוקר</td>
-					<td ng-repeat="s in getShift1"> {{s}} </td></tr>
-					<tr>
-						<td>צהריים</td>
-						
-					<td ng-repeat="s in getShift2"> {{s}} </td></tr>
-					<tr>
-						<td>לילה</td>
-					<td ng-repeat="s in getShift3"> {{s}} </td>
-</tr>
-				</tr>
-			
-		</table>
+		
 		<ng-view></ng-view>
 
 		<!-- style -->

@@ -1,0 +1,24 @@
+<div class="clear-box"></div>
+<table ng-controller="getShifts" class="table">
+
+	<tr ng-init="getShift()">
+
+	<tr>
+		<th id="date">01/12/2016  חמישי</th>
+	</tr>
+	<tr>
+		<td>בוקר</td>
+		<td ng-repeat="s in getShift1"> {{s}} </td>
+	</tr>
+	<tr>
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getShift2"> {{s}} </td>
+	</tr>
+	<tr>
+		<td>לילה</td>
+		<td ng-repeat="s in getShift3"> {{s}} </td>
+	</tr>
+	</tr><hr><hr>
+	
+</table>
