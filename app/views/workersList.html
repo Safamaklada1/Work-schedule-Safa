@@ -1,11 +1,11 @@
 <div class="clear-box"></div>
 			<div>date:{{date}}</div>
-			<div ng-init="getList()" ng-init="getShift()" ><hr>
-			<input type="number" placeholder="משמרת" ng-model="shift"  />
-			<input type="text" placeholder="שם" ng-model="name"  /><br>
-			<input type="text" placeholder="כתובת" ng-model="address"  />
-			<input type="number" placeholder="טלפון" ng-model="phone"  /><br>
-			<input type="email" placeholder="example@example.com" ng-model="email"  />
+			<form ng-init="getList()" ng-init="getShift()" ><hr>
+			<input type="number" placeholder="משמרת" ng-model="shift" required />
+			<input type="text" placeholder="שם" ng-model="name"  required/><br>
+			<input type="text" placeholder="כתובת" ng-model="address" required />
+			<input type="number" placeholder="טלפון" ng-model="phone"  required/><br>
+			<input type="email" placeholder="example@example.com" ng-model="email" required />
 			<hr>
 			<div class="box1">
 			<input type="checkbox" ng-model="jobTitle.value1"  ng-true-value="'v'" ng-false-value="'x'"/>
@@ -23,7 +23,7 @@
 			</div><br><hr>
 			<button type="submit" class="btn" ng-click="worker()">
 				createWorker
-			</button>
+			</button></form>
 			<div><!-- <button ng-click="getList()">getList</button> -->
 				<table class="table">
 					<thead>

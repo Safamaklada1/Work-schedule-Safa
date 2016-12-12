@@ -3,11 +3,13 @@
 	function dateTime(){
 		function viewDate(){
 			
-			var date=moment(Date.now()).format("DD/MM/YYYY");
+			date=moment(Date.now()).format("DD/MM/YYYY,dddd");
+			}
 			return {
-				date:date
-			};
-		}
+				date:viewDate()
+			}
+			
+		
 		
 	
 	

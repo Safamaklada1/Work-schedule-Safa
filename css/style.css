@@ -2,18 +2,25 @@
 	direction: rtl;
 	float:left;
 }
+#mangerMessages {
+	margin-right: 10px;
+}
+#mangerMessages {
+	margin-right: 10px;
+}
 ul{
 	text-align:center;
 	list-style-type: none;
 }
 ul li{
 	
-	margin-left: 20px;
+	margin-right: 20px;
 	text-align:center;
 	float:left;
 	list-style-type: none;
 }
 #date{
+	margin: 0 auto;
 	text-align: center;
     
 }

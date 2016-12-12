@@ -1,14 +1,14 @@
 <div class="clear-box"></div>
-<table class="table-bordered" ng-init="getMessagesFromLocal()">
+<table  class="table-bordered" ng-init="getMessagesFromLocal()">
 	<!-- <button ng-click="getMessagesFromLocal()">Get messages</button> -->
 	<tr>
-					<th>date</th>
-					<th>name</th>
-					<th>message</th>
+					<th class="col-md-4 col-md-offset-4">date</th>
+					<th class="col-md-4 col-md-offset-4">name</th>
+					<th class="col-md-4 col-md-offset-4">message</th>
 	</tr>		
 	<tr ng-repeat="m in getMessages">
-					<td>{{m.date}}</td>
-					<td>{{m.name}}</td>
-					<td>{{m.message}}</td>
+					<td class="col-md-4 col-md-offset-4">{{m.date}}</td>
+					<td class="col-md-4 col-md-offset-4">{{m.name}}</td>
+					<td class="col-md-4 col-md-offset-4">{{m.message}}</td>
 	</tr>			
 </table>

@@ -1,5 +1,5 @@
 <div class="clear-box"></div>
-<table ng-controller="getShifts" class="table">
+<table class="table">
 
 	<tr ng-init="getShift()">
 
@@ -8,17 +8,268 @@
 	</tr>
 	<tr>
 		<td>בוקר</td>
-		<td ng-repeat="s in getShift1"> {{s}} </td>
+
+		<td ng-repeat="s in getShift1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+			{{s.name}}
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
 	</tr>
 	<tr>
 		<td>צהריים</td>
 
-		<td ng-repeat="s in getShift2"> {{s}} </td>
+		<td ng-repeat="s in getShift2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
 	</tr>
 	<tr>
 		<td>לילה</td>
-		<td ng-repeat="s in getShift3"> {{s}} </td>
+		<td ng-repeat="s in getShift3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
 	</tr>
-	</tr><hr><hr>
+	
+	<tr>
+		<th id="date">02/12/2016  ששי</th>
+	</tr>
+	<tr>
+		<td>בוקר</td>
+
+		<td ng-repeat="s in getShift1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+			{{s.name}}
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getShift2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<td>לילה</td>
+		<td ng-repeat="s in getShift3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">03/12/2016  שבת</th>
+	</tr>
+	<tr>
+		<td>בוקר</td>
+
+		<td ng-repeat="s in getShift1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+			{{s.name}}
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getShift2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<td>לילה</td>
+		<td ng-repeat="s in getShift3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">04/12/2016  ראשון</th>
+	</tr>
+	<tr>
+		<td>בוקר</td>
+		<td ng-repeat="s in getShift2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+		
+	</tr>
+	<tr>
+		<td>צהריים</td>
+		<td ng-repeat="s in getShift3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+		
+		
+	</tr>
+	<tr>
+		<td>לילה</td>
+		<td ng-repeat="s in getShift1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+			{{s.name}}
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+<tr>
+		<th id="date">05/12/2016  שני</th>
+		<tr>
+		<td>בוקר</td>
+		<td ng-repeat="s in getShift2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+		
+	</tr>
+	<tr>
+		<td>צהריים</td>
+		<td ng-repeat="s in getShift3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+		
+		
+	</tr>
+	<tr>
+		<td>לילה</td>
+		<td ng-repeat="s in getShift1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+			{{s.name}}
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	</tr>
+	<tr>
+		<th id="date">06/12/2016  שלישי</th>
+		<tr>
+		<td>בוקר</td>
+		<td ng-repeat="s in getShift2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+		
+	</tr>
+	<tr>
+		<td>צהריים</td>
+		<td ng-repeat="s in getShift3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+		
+		
+	</tr>
+	<tr>
+		<td>לילה</td>
+		<td ng-repeat="s in getShift1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+			{{s.name}}
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	</tr>
 	
 </table>

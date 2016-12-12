@@ -15,7 +15,14 @@
 			
 			templateUrl:"app/views/managerMessages.html",
 			controller:"getMessagesToList"
-		});
+		}).when("/getShifts",{
+			templateUrl:"app/views/december2016.html",
+			controller:"getShifts"
+		}).when("/",{
+			templateUrl:"app/views/december2016.html",
+			controller:"getShifts"
+		})
+		;
 	}
 	
 	

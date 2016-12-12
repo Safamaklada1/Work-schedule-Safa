@@ -1,13 +1,14 @@
 (function() {
 	angular.module("app").controller("createWorkers", createWorkers);
 
-	function createWorkers($scope) {
-		$scope.date = moment(Date.now()).format("DD/MM/YYYY");
-		$scope.name
-		$scope.shift
-		$scope.email
-		$scope.address
-		$scope.phone
+	function createWorkers($scope,dateTime) {
+		$scope.date=date
+		// $scope.date = moment(Date.now()).format("DD/MM/YYYY,dddd");
+		$scope.name;
+		$scope.shift;
+		$scope.email;
+		$scope.address;
+		$scope.address;
 		$scope.jobTitle = {
 			value1 : 'v',
 			value2 : 'v',
@@ -22,7 +23,12 @@
 				$(this).find('td:nth-child(1)').html(index + 1);
 			});
 		};
+		// ,$scope.name="",$scope.email="",$scope.address="",$scope.phone=""
 		$scope.worker = function() {
+			if(!$scope.shift||!$scope.name||!$scope.email||!$scope.address||!$scope.address)
+				alert("תמלא שדות חובה");
+			else{
+			var day;
 			var shift1;
 			var shift2;
 			var shift3;
@@ -43,13 +49,14 @@
 				pr : $scope.jobTitle.value6
 			};
 			allworkers.push(worker1);
+			
 			// console.log(worker1);
 			if (worker1.shift == 1) {
 				shift1 = (JSON.parse(localStorage.getItem("shift1")));
 				if (!shift1)
 					shift1 = [];
 
-				shift1.push(worker1.name);
+				shift1.push({name:worker1.name});
 				localStorage.setItem("shift1", JSON.stringify(shift1));
 
 			} else if (worker1.shift == 2) {
@@ -57,7 +64,7 @@
 				if (!shift2)
 					shift2 = [];
 
-				shift2.push(worker1.name);
+				shift2.push({name:worker1.name});
 				localStorage.setItem("shift2", JSON.stringify(shift2));
 
 			} else if (worker1.shift == 3) {
@@ -65,14 +72,15 @@
 				if (!shift3)
 					shift3 = [];
 
-				shift3.push(worker1.name);
+				shift3.push({name:worker1.name});
 				localStorage.setItem("shift3", JSON.stringify(shift3));
 
 			}
 			$scope.getWorker = allworkers;
+			
 			localStorage.setItem("allworkers", JSON.stringify(allworkers));
 
-		};
+		}};
 		$scope.getList = function() {
 
 			$scope.getWorker = JSON.parse(localStorage.getItem("allworkers"));
@@ -89,6 +97,16 @@
 				var index = shift.indexOf(deletWorker[0].name);
 				shift.splice(index, 1);
 				localStorage.setItem("shift1", JSON.stringify(shift));
+			}else if(deletWorker[0].shift === 2) {
+				var shift = JSON.parse(localStorage.getItem("shift2"));
+				var index = shift.indexOf(deletWorker[0].name);
+				shift.splice(index, 1);
+				localStorage.setItem("shift2", JSON.stringify(shift));
+			}else if(deletWorker[0].shift === 3) {
+				var shift = JSON.parse(localStorage.getItem("shift3"));
+				var index = shift.indexOf(deletWorker[0].name);
+				shift.splice(index, 1);
+				localStorage.setItem("shift3", JSON.stringify(shift));
 			}
 
 		};
