@@ -1,3 +1,8 @@
+header{
+	text-align: center;
+	font-size:30px;
+	color:#2B669A;
+}
 .box1{
 	direction: rtl;
 	float:left;
