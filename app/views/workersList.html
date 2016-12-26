@@ -1,6 +1,9 @@
 <div class="clear-box"></div>
 			<div>date:{{date}}</div>
-			<form ng-init="getList()" ng-init="getShift()" ><hr>
+			<button type="button" class="btn" ng-click="getShiftsInDay()">
+				save by week
+			</button>
+			<form ng-init="getList()" ng-init="getShift()" ng-init="getShiftsInDay()"><hr>
 			<input type="number" placeholder="משמרת" ng-model="shift" required />
 			<input type="text" placeholder="שם" ng-model="name"  required/><br>
 			<input type="text" placeholder="כתובת" ng-model="address" required />
