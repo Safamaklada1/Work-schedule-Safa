@@ -4,272 +4,1493 @@
 	<tr ng-init="getShift()">
 
 	<tr>
-		<th id="date">01/12/2016  חמישי</th>
-	</tr>
-	<tr>
-		<td>בוקר</td>
-
-		<td ng-repeat="s in getShift1" >
-		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
-			{{s.name}}
-		</div>
-		<div ng-show="shift1Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
-	<tr>
-		<td>צהריים</td>
-
-		<td ng-repeat="s in getShift2">
-		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
-		</div>
-		<div ng-show="shift3Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
-	<tr>
-		<td>לילה</td>
-		<td ng-repeat="s in getShift3">
-		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
-		</div>
-		<div ng-show="shift3Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
-	
-	<tr>
-		<th id="date">02/12/2016  ששי</th>
-	</tr>
-	<tr>
-		<td>בוקר</td>
-
-		<td ng-repeat="s in getShift1" >
-		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
-			{{s.name}}
-		</div>
-		<div ng-show="shift1Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
-	<tr>
-		<td>צהריים</td>
-
-		<td ng-repeat="s in getShift2">
-		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
-		</div>
-		<div ng-show="shift3Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
-	<tr>
-		<td>לילה</td>
-		<td ng-repeat="s in getShift3">
-		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
-		</div>
-		<div ng-show="shift3Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
-	<tr>
-		<th id="date">03/12/2016  שבת</th>
-	</tr>
-	<tr>
-		<td>בוקר</td>
-
-		<td ng-repeat="s in getShift1" >
-		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
-			{{s.name}}
-		</div>
-		<div ng-show="shift1Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
-	<tr>
-		<td>צהריים</td>
-
-		<td ng-repeat="s in getShift2">
-		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
-		</div>
-		<div ng-show="shift3Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
-	<tr>
-		<td>לילה</td>
-		<td ng-repeat="s in getShift3">
-		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
-		</div>
-		<div ng-show="shift3Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
-	<tr>
 		<th id="date">04/12/2016  ראשון</th>
 	</tr>
-	<tr>
+	<tr id="morning">
 		<td>בוקר</td>
-		<td ng-repeat="s in getShift2">
-		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
-		</div>
-		<div ng-show="shift3Editable">
-			<input ng-model="s.name" />
-		</div></td>
-		
-	</tr>
-	<tr>
-		<td>צהריים</td>
-		<td ng-repeat="s in getShift3">
-		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
-		</div>
-		<div ng-show="shift3Editable">
-			<input ng-model="s.name" />
-		</div></td>
-		
-		
-	</tr>
-	<tr>
-		<td>לילה</td>
-		<td ng-repeat="s in getShift1" >
+		<td ng-repeat="s in getWeek1" >
 		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
 			Save
 		</button>
 		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
-			{{s.name}}
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
 		</div>
 		<div ng-show="shift1Editable">
-			<input ng-model="s.name" />
+			<input ng-model="d.name" />
 		</div></td>
 	</tr>
-<tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift2Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift2Editable" ng-click="shift2Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift2Editable">
+			<input ng-model="d.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="d.name" />
+		</div></td>
+	</tr>
+
+	<tr>
 		<th id="date">05/12/2016  שני</th>
-		<tr>
+	</tr>
+	<tr id="morning">
 		<td>בוקר</td>
-		<td ng-repeat="s in getShift2">
+		<td ng-repeat="s in getWeek1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek1">
 		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
 			Save
 		</button>
 		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
 		</div>
 		<div ng-show="shift3Editable">
 			<input ng-model="s.name" />
 		</div></td>
-		
 	</tr>
-	<tr>
-		<td>צהריים</td>
-		<td ng-repeat="s in getShift3">
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek1">
 		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
 			Save
 		</button>
 		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
 			{{s.name}}
 		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
 		<div ng-show="shift3Editable">
 			<input ng-model="s.name" />
 		</div></td>
-		
-		
-	</tr>
-	<tr>
-		<td>לילה</td>
-		<td ng-repeat="s in getShift1" >
-		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
-			Save
-		</button>
-		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
-			{{s.name}}
-		</div>
-		<div ng-show="shift1Editable">
-			<input ng-model="s.name" />
-		</div></td>
-	</tr>
 	</tr>
 	<tr>
 		<th id="date">06/12/2016  שלישי</th>
-		<tr>
+	</tr>
+	<tr id="morning">
 		<td>בוקר</td>
-		<td ng-repeat="s in getShift2">
+		<td ng-repeat="s in getWeek1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek1">
 		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
 			Save
 		</button>
 		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
-			{{s.name}}
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
 		</div>
 		<div ng-show="shift3Editable">
 			<input ng-model="s.name" />
 		</div></td>
-		
 	</tr>
-	<tr>
-		<td>צהריים</td>
-		<td ng-repeat="s in getShift3">
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek1">
 		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
 			Save
 		</button>
 		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
 			{{s.name}}
 		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
 		<div ng-show="shift3Editable">
 			<input ng-model="s.name" />
 		</div></td>
-		
-		
 	</tr>
 	<tr>
-		<td>לילה</td>
-		<td ng-repeat="s in getShift1" >
+		<th id="date">07/12/2016  רביעי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek1" >
 		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
 			Save
 		</button>
 		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
-			{{s.name}}
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
 		</div>
 		<div ng-show="shift1Editable">
 			<input ng-model="s.name" />
 		</div></td>
 	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
 	</tr>
-	
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">08/12/2016  חמישי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">09/12/2016  ששי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">10/12/2016  שבת</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek1" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek1">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">11/12/2016  ראשון</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek2" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+
+	<tr>
+		<th id="date">12/12/2016  שני</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek2" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">13/12/2016  שלישי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek2" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">14/12/2016  רביעי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek2" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">15/12/2016  חמישי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek2" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">16/12/2016  ששי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek2" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">17/12/2016  שבת</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek2" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek2">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">18/12/2016  ראשון</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek3" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+
+	<tr>
+		<th id="date">19/12/2016  שני</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek3" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">20/12/2016  שלישי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek3" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">21/12/2016  רביעי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek3" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">22/12/2016  חמישי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek3" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">23/12/2016  ששי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek3" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">24/12/2016  שבת</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek3" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek3">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">25/12/2016  ראשון</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek4" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+
+	<tr>
+		<th id="date">26/12/2016  שני</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek4" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">27/12/2016  שלישי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek4" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">28/12/2016  רביעי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek4" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">29/12/2016  חמישי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek4" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">30/12/2016  ששי</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek4" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr>
+		<th id="date">31/12/2016  שבת</th>
+	</tr>
+	<tr id="morning">
+		<td>בוקר</td>
+		<td ng-repeat="s in getWeek4" >
+		<button ng-show="shift1Editable" ng-click="saveShift1(1);shift1Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift1Editable" ng-click="changedNameShift1();shift1Editable=true" >
+
+			<div ng-repeat="d in s.sunday.morning" >
+				{{d.name}}
+			</div>
+
+		</div>
+		<div ng-show="shift1Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="afternoon">
+		<td>צהריים</td>
+
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift2(2);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{d.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.afternoon" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	<tr id="night">
+		<td>לילה</td>
+		<td ng-repeat="s in getWeek4">
+		<button ng-show="shift3Editable" ng-click="saveShift3(3);shift3Editable=false">
+			Save
+		</button>
+		<div ng-show="!shift3Editable" ng-click="shift3Editable=true">
+			{{s.name}}
+		</div>
+		<div ng-repeat="d in s.sunday.night" >
+			{{d.name}}
+		</div>
+		<div ng-show="shift3Editable">
+			<input ng-model="s.name" />
+		</div></td>
+	</tr>
+	</tr>
+
 </table>
